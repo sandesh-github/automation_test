@@ -246,6 +246,9 @@ branch 'master' set up to track 'origin/master'.
 C:\Users\sgot0001\synchronoss_documents\Automation\git_test>
 
 
+Testing few merge options
+
+
 
 
 
