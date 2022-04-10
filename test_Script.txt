@@ -1,0 +1,148 @@
+
+
+
+https://git-scm.com/download/win
+
+To get the version:
+git --version
+
+To check the status:
+git status 
+
+to initalize a local repository:
+git init 
+
+To push to the github account:
+git config --global user.name “firstname lastname”
+git config --global user.email “valid-email”
+
+
+git config --global user.name “sandesh-github”
+git config --global user.email “sadeshi2@gmail.com”
+
+
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git config -l
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=sandesh-github
+user.email=sadeshi2@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+
+create a test file / script:
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>nul > test_Script.txt
+Access is denied.
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>dir
+ Volume in drive C is Windows
+ Volume Serial Number is AE2D-E440
+
+ Directory of C:\Users\sgot0001\synchronoss_documents\Automation\git_test
+
+04/10/2022  06:34 PM    <DIR>          .
+04/10/2022  06:34 PM    <DIR>          ..
+04/10/2022  06:34 PM                 0 test_Script.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  117,317,832,704 bytes free
+
+
+adding the script to GIT local repository:
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git add test_Script.txt
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test_Script.txt
+
+
+Commiting the script to the local repostory:
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git commit -m 'pushing the first test script'
+error: pathspec 'the' did not match any file(s) known to git
+error: pathspec 'first' did not match any file(s) known to git
+error: pathspec 'test' did not match any file(s) known to git
+error: pathspec 'script'' did not match any file(s) known to git
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git commit -m "pushing the first test script"
+[master (root-commit) 809e5c0] pushing the first test script
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test_Script.txt
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>
+
+
+If you want to add all the files in the directory to your local repository:
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git add --all
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>
+
+
+Git branch details:
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git branch
+* master
+
+
+
+To push the files from local repository to remote repository on github:
+
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git remote add origin https://github.com/sandesh-github/automation_test.git
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>dir
+ Volume in drive C is Windows
+ Volume Serial Number is AE2D-E440
+
+ Directory of C:\Users\sgot0001\synchronoss_documents\Automation\git_test
+
+04/10/2022  06:34 PM    <DIR>          .
+04/10/2022  06:34 PM    <DIR>          ..
+04/10/2022  06:34 PM                 0 test_Script.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  117,311,086,592 bytes free
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git remote add origin https://github.com/sandesh-github/automation_test.git
+error: remote origin already exists.
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 230 bytes | 57.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sandesh-github/automation_test.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>
