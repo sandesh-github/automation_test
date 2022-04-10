@@ -146,3 +146,120 @@ To https://github.com/sandesh-github/automation_test.git
 branch 'master' set up to track 'origin/master'.
 
 C:\Users\sgot0001\synchronoss_documents\Automation\git_test>
+
+
+pushing the new addition from local to remote github repository:
+
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test_Script.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git commit -m "commiting the changes made"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test_Script.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test_Script.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git add -A
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   test_Script.txt
+
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git commit -m "commiting the changes made"
+[master c858424] commiting the changes made
+ 1 file changed, 148 insertions(+)
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.57 KiB | 1.57 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sandesh-github/automation_test.git
+   809e5c0..c858424  master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\sgot0001\synchronoss_documents\Automation\git_test>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
